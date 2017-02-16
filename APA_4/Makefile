@@ -1,9 +1,9 @@
 CC = g++
 
 all:
-	$(CC) -O3 -o sorting *.cpp
+	$(CC) -O3 -o Heuristica *.cpp
 
 clean:
-	rm sorting
+	rm Heuristica
 	rm *.out
 
