@@ -13,7 +13,8 @@ namespace Prim_Algorithm
 	    
             for (int i = 0; i < n-1; i++)
             {
-		var values = (Console.ReadLine().Split(' '));
+		var values = (Console.ReadLine().Split('	'));
+		Console.Write("{0} ",values[0]);
 		int aux = 0;		
                 for (int j = 0; j < n; j++)
                 {
@@ -104,6 +105,7 @@ namespace Prim_Algorithm
         static void Main(string[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine(n);
             int[,] matrix = new int[n, n];
             completa_matrix(n, matrix);
             PRIM(matrix,n);
